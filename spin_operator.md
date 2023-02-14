@@ -132,8 +132,18 @@ $$
 \langle S^2\rangle = - \sum_{pq} \bar{\Gamma}_{p\uparrow q\uparrow q\downarrow p\downarrow} + \frac{N_{\uparrow}+N_{\downarrow}}{2} + \left(\frac{N_{\uparrow}-N_{\downarrow}}{2}\right)^2
 $$
 
+#### HF and DFT case
+
 If the reference state $|\Psi\rangle$ is a single Slater determinant, then the 2RDM can be written in terms of 1RDM as
 $$
 \Gamma_{PQRS} = \gamma_{PR}\gamma_{QS} - \gamma_{PS}\gamma_{QR}.
 $$
-Since $\gamma_{PQ} = f_P\delta_{PQ}$, where $f_P$ is the occupation number of the spin-orbital,
+Since $\gamma_{PQ} = f_P\delta_{PQ}$, where $f_P$ is the occupation number of the spin-orbital, we can write
+$$
+\sum_{pq} \Gamma_{p\uparrow q\downarrow q\uparrow p\downarrow} = \sum_p f_{p\uparrow}f_{p\downarrow} = \frac{N_{\uparrow}+N_{\downarrow}}{2},
+$$
+where we assumed double occupancy of orbitals, i.e. the sum counts the number of occupied orbitals, which is half of the electron number. Since we also have $N_{\uparrow} = N_{\downarrow}$ in this case, we get
+$$
+\langle S^2\rangle = 0,
+$$
+which is expected for restricted HF and DFT wave functions.
