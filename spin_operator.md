@@ -72,6 +72,7 @@ and
 $$
 \pmb{S} = \sum_p \begin{pmatrix}a^{\dagger}_{p\uparrow} & a^{\dagger}_{p\downarrow}\end{pmatrix} \pmb{s} \begin{pmatrix}a_{p\uparrow} \\ a_{p\downarrow}\end{pmatrix}.
 $$
+Note the relationship with the [Bogoliubov transformation](https://en.wikipedia.org/wiki/Bogoliubov_transformation), for $a^{\dagger}_{\uparrow}\equiv a^{\dagger}$ and $a^{\dagger}_{\downarrow}\equiv b^{\dagger}$ if we replace $\pmb{S}$ with the Hamiltonian.
 
 #### $S_z$ projection
 
