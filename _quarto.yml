@@ -10,6 +10,14 @@ website:
       - about.qmd
       - href: spin_operator.md
         text: Spin Operator
+    right:
+      - icon: twitter
+        href: https://twitter.com/KadekMarius
+      - icon: google
+        href: https://scholar.google.com/citations?user=5BmKNMkAAAAJ&hl=en
+      - icon: github
+        href: https://github.com/mkadek
+
 
 format:
   html:
