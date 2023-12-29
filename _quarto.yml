@@ -8,9 +8,12 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - blog.qmd
       - href: spin_operator.md
         text: Spin Operator
     right:
+      - icon: envelope
+        href: mailto:marius.kadek@uit.no
       - icon: twitter
         href: https://twitter.com/KadekMarius
       - icon: google
@@ -21,7 +24,8 @@ website:
 
 format:
   html:
-    theme: cosmo
+#   theme: sandstone
+    theme: yeti
     css: styles.css
     toc: true
 
