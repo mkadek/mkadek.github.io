@@ -7,8 +7,18 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - blog.qmd
+      - text: "Research"
+        href: research/
+      - text: "Publications"
+        href: publications/
+      - text: "Talks"
+        href: talks/
+      - text: "Materials"
+        href: materials/
+      - text: "Teaching"
+        href: teaching/
+      - text: "Contact"
+        href: contact.qmd
       - href: spin_operator.md
         text: Spin Operator
     right:
@@ -20,7 +30,11 @@ website:
         href: https://scholar.google.com/citations?user=5BmKNMkAAAAJ&hl=en
       - icon: github
         href: https://github.com/mkadek
-
+  page-footer:
+    center: |
+      © 2024 $\cdot$ Made with [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=75px}](https://quarto.org/) and [![](https://www.cursor.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-light.636eeb83.png&w=3840&q=100){fig-alt="Cursor" width=15px} Cursor](https://cursor.com/) {{< fa keyboard >}}
+    right: |
+      <a href="#top">Back to top</a> {{< fa solid arrow-up >}}
 
 format:
   html:
@@ -28,6 +42,44 @@ format:
     theme: yeti
     css: styles.css
     toc: true
+    include-in-header:
+      - text: |
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 
 
+
+
+# Define subdirectories for different sections of the website
+# Each of these might have its own _quarto.yml for more specific settings
+collections:
+  # Research subpage
+  - name: research
+    subdirectory: research
+    listing:
+      contents: posts
+      sort: date desc
+  # Publications subpage
+  - name: publications
+    subdirectory: publications
+    listing:
+      contents: posts
+      sort: date desc
+  # Teaching subpage
+  - name: teaching
+    subdirectory: teaching
+    listing:
+      contents: posts
+      sort: date desc
+  # Talks subpage
+  - name: talks
+    subdirectory: talks
+    listing:
+      contents: posts
+      sort: date desc
+  # Materials subpage
+  - name: materials
+    subdirectory: materials
+    listing:
+      contents: posts
+      sort: date desc
 

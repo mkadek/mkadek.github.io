@@ -2,7 +2,7 @@
 title: "Home"
 image: profile.jpg
 about:
-  template: jolla
+  template: trestles
   links:
     - icon: twitter
       text: Twitter
